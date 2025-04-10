@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的导航页面</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我的导航</h1>
+            <p class="subtitle">快速访问您的常用网站</p>
+        </header>
+        
+        <main>
+            <button id="settingsBtn" class="settings-btn">设置</button>
+            <div class="links-container" id="linksContainer">
+                <!-- 链接将通过 JavaScript 动态生成 -->
+            </div>
+            
+            <div class="settings-modal" id="settingsModal">
+                <div class="modal-content">
+                    <h2>管理导航链接</h2>
+                    <p class="modal-description">在这里添加或删除您的导航链接</p>
+                    <div class="add-link-form">
+                        <input type="text" id="siteName" placeholder="网站名称">
+                        <input type="url" id="siteUrl" placeholder="网站地址">
+                        <button id="addLink">添加链接</button>
+                    </div>
+                    <div class="links-manager" id="linksManager">
+                        <!-- 可管理的链接列表将在这里显示 -->
+                    </div>
+                    <button id="closeSettings" class="close-btn">关闭</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
