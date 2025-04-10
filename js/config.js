@@ -6,11 +6,9 @@
 const config = {
     // API服务器地址，部署时修改为实际服务器地址
     // 例如: "https://your-server.com"
-    apiBaseUrl: "http://localhost:3000",
-    
-    // JWT密钥（仅后端使用）
-    // 部署时应修改为强密钥
-    jwtSecret: "your-secret-key"
+    apiBaseUrl: "http://localhost:5500"
+    // 注意：敏感配置如JWT密钥已移至服务器端的.env文件中
+    // 这样可以提高系统安全性，防止密钥泄露
 };
 
 // 在浏览器环境中导出
